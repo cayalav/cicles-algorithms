@@ -94,3 +94,18 @@ def num4():
   print(avgDict)
   print(f"Promedio total = "+str(suma/lend))
   print("######################################################") 
+
+# Ejercicio 5
+def num5():
+  n = int(input("escribe el total de numeros a calcular\n"))
+  x = 1
+  while(x <= n):
+    numero = int(input("escriba un numero\n"))
+    if(x == 1):
+        menor = numero
+    else:
+        if(numero < menor):
+            menor = numero
+    x+=1
+  print("el numero menor es: ", menor)  
+  print("######################################################")  
