@@ -139,3 +139,16 @@ def num7():
   print("el total a pagar por los articulos es: ", total)    
   print("######################################################") 
 
+# Ejercicio 8
+def num8():
+  ages = randint(1, 91, 100) #Edades random del 1 al 90
+  prices = random.sample(range(10, 250), 100) #Precios unicos en asientos
+  perdida = 0
+  for indx, val in enumerate(ages):
+    if val>=5 and val <= 14: perdida=perdida+prices[indx]*0.35
+    if val>=15 and val <= 19: perdida=perdida+prices[indx]*0.25
+    if val>=20 and val <= 45: perdida=perdida+prices[indx]*0.15
+    if val>=46 and val <= 65: perdida=perdida+prices[indx]*0.25
+    if val>=66: perdida=perdida+prices[indx]*0.35
+  print("Lo que el teatro deja de percibir es $"+str(round(perdida, 2))+" USD")  
+  print("######################################################") 
