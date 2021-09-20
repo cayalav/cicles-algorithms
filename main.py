@@ -78,3 +78,19 @@ def num3():
     x+=1     
   print("######################################################")  
 
+# Ejercicio 4
+def num4():
+  StudentGrades = {
+    'Hombres': [15, 17],
+    'Mujeres': [23, 19]
+    } 
+  avgDict = {}
+  suma=0
+  lend=0
+  for k,v in StudentGrades.items():
+    avgDict[k] = sum(v)/ float(len(v))
+    suma=suma+sum(v)
+    lend=lend+len(v)
+  print(avgDict)
+  print(f"Promedio total = "+str(suma/lend))
+  print("######################################################") 
