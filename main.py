@@ -152,3 +152,30 @@ def num8():
     if val>=66: perdida=perdida+prices[indx]*0.35
   print("Lo que el teatro deja de percibir es $"+str(round(perdida, 2))+" USD")  
   print("######################################################") 
+
+# Ejercicio 9
+def num9():
+  vendedor = []
+  comision_venta = []
+  i = 1
+  n = int(input("ingrese numero de vendedores\n"))
+  while(i <= n):
+    nombre = input("Ingrese nombre vendedor\n")
+    vendedor.append(nombre) 
+    venta = int(input("ingrese importe total venta\n"))
+    if(venta <= 20000000):
+      comision = venta * 0.10
+    elif(venta > 20000000 and venta < 40000000):
+      comision = venta * 0.15
+    elif(venta >= 40000000 and venta < 80000000):       
+      comision = venta * 0.20    
+    elif(venta >= 80000000 and venta <= 1600000000):
+      comision = venta * 0.25
+    elif(venta >= 1600000000):
+      comision = venta * 0.30
+    i+=1
+    comision_venta.append(comision) 
+  print("Comisiones vendedores")
+  print("nombre vendedor:",vendedor, "comision:",comision_venta)
+  print("######################################################") 
+
