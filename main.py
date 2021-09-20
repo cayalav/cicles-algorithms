@@ -109,3 +109,17 @@ def num5():
     x+=1
   print("el numero menor es: ", menor)  
   print("######################################################")  
+
+# Ejercicio 6
+def num6():
+  for x in range(5):
+    rand = random.randint(60,120)
+    randopminus = random.randint(0,10)
+    randomplus = random.randint(0,10)
+    pesoant = rand - randopminus + randomplus
+    pesoList = randint(rand-1, rand+1, 10)
+    if mean(pesoList) > pesoant: print("La persona #"+str(x+1)+" aumentó de peso") 
+    if mean(pesoList) < pesoant: print("La persona #"+str(x+1)+" bajó de peso") 
+    if mean(pesoList) == pesoant: print("La persona #"+str(x+1)+" está igual de peso") 
+  print("######################################################")  
+
