@@ -38,3 +38,23 @@ def num1():
   print("total de automoviles con calcomania verde", verde)
   print("total de automoviles con calcomania azul", azul)
   print("######################################################") 
+
+# Ejercicio 2
+def num2():
+  print('¿Digite un numero del animal que estudiara? 1. Elefante, 2. Jirafas, 3. Chimpancés:')
+  inp = int(input())
+  if inp == 1: cicle = 20
+  if inp == 2: cicle = 15
+  if inp == 3: cicle = 40
+  values = randint(0, 6, cicle)
+  count_arr = np.bincount(values)
+  count_arr = np.bincount(values)
+  cat1 = (count_arr[0] + count_arr[1])*100/cicle
+  cat2 = count_arr[2]*100/cicle
+  cat3 = (count_arr[3] + count_arr[4] + count_arr[5])*100/cicle
+  print(f"muestra de "+str(cicle)+" numeros")
+  print(f""+str(cat1)+"%"+" de las edades son de 0 a 1 año")
+  print(f""+str(cat2)+"%"+" de las edades son de mas de 1 año y menos de 3 años")
+  print(f""+str(cat3)+"%"+" de las edades son de mas de 3 años")
+
+  print("######################################################")  
