@@ -58,3 +58,23 @@ def num2():
   print(f""+str(cat3)+"%"+" de las edades son de mas de 3 años")
 
   print("######################################################")  
+
+# Ejercicio 3
+def num3():
+  t = int(input("Escribe el numero de trabajadores\n"))
+  x = 1
+  salario = 0
+  horas_extra = 0
+  while x <= t:
+    h = int(input("escribe el numero de horas trabajadas\n"))
+     
+    if(h <= 40):
+        salario = h * 20
+        print("el salario del trabajador ",x," es:", salario)
+    else:
+      horas_extra = h - 40
+      salario = (40 * 20) + (horas_extra * 25)
+      print("el salario del trabajador ",x," es:", salario)
+    x+=1     
+  print("######################################################")  
+
