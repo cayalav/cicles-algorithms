@@ -123,3 +123,19 @@ def num6():
     if mean(pesoList) == pesoant: print("La persona #"+str(x+1)+" está igual de peso") 
   print("######################################################")  
 
+# Ejercicio 7
+def num7(): 
+  cantidad = 0
+  total = 0
+  precio = 0
+  res = 0
+  while(True):
+    cantidad = int(input("ingresa la cantidad de articulos\n"))
+    precio = int(input("ingrese el precio del articulo\n"))
+    total = total + (cantidad * precio)
+    res = int(input("desea seguir comprando (1.si 2.no)\n"))
+    if(res != 1):
+      break
+  print("el total a pagar por los articulos es: ", total)    
+  print("######################################################") 
+
