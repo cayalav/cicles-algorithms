@@ -179,3 +179,31 @@ def num9():
   print("nombre vendedor:",vendedor, "comision:",comision_venta)
   print("######################################################") 
 
+# Ejercicio 10
+def num10():
+  values = randint(0, 3, 50000)
+  count_arr = np.bincount(values)
+  can0 = (count_arr[0])
+  can1 = (count_arr[1])
+  can2 = (count_arr[2])
+  #Es imposible un empate porque 50K no es divisible entre 3
+  if can0 > can1 and can0 > can2 : winname ="Canditato #0"
+  if can1 > can0 and can1 > can2 : winname ="Candidato #1"
+  if can2 > can0 and can2 > can1 : winname ="Candidato #2"
+  winnum=max(can0, can1, can2)
+  print(can0)
+  print(can1)
+  print(can2)
+  print(f"el ganador es "+winname+" con "+str(winnum)+" votos")
+  print("######################################################")       
+
+#num1()
+#num2()
+#num3()
+#num4()
+#num5()
+#num6()
+#num7() 
+#num8()
+#num9()
+#num10()
